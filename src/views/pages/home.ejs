@@ -11,6 +11,18 @@
 </head>
 
 <body>
+    <nav>
+        <% if(navItems) {%>
+            <ul>
+                <% navItems.forEach(item=> { %>
+                    <li>
+                        <a href=<%=item.url %> ><%= item.label %></a>
+                    </li>
+                    <% }); %>
+            </ul>
+            <% } %>
+    </nav>
+
     <h1>
         <%= title %>
     </h1>
