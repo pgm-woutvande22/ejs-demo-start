@@ -15,25 +15,27 @@
     <nav class="primary">
         <%- include('../partials/nav'); -%>
 
-    <h1>
-        <%= title %>
-    </h1>
+            <h1>
+                <%= title %>
+            </h1>
 
-    <p>
-        <%= content %>
-    </p>
+            <p>
+                <%= content %>
+            </p>
 
-    <hr>
-    <% if(team) {%>
-        <h3>Teamleden</h3>
-        <ul>
-            <% team.forEach(member=> { %>
-                <li>
-                    <%- member %>
-                </li>
-                <% }); %>
-        </ul>
-        <% } %>
+            <hr>
+            <% if(team) {%>
+                <h3>Teamleden</h3>
+                <ul>
+                    <% team.forEach(member=> { %>
+                        <li>
+                            <%- member %>
+                        </li>
+                        <% }); %>
+                </ul>
+                <% } %>
+
+                <%- include('../partials/footer'); -%>
 </body>
 
 </html>
