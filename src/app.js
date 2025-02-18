@@ -2,6 +2,8 @@
 import express from "express";
 import path from "path";
 
+import {home, about, contact, privacy} from "./controllers/PageController.js"
+
 // create an instance of express
 const app = express();
 
@@ -14,12 +16,11 @@ app.set("views", path.resolve("src", "views"));
 app.use(express.static("public"));
 
 // GET route to serve the index.html file
-app.get("/", (req, res) => {
-  res.render("home", {
-    title: "Dino are cool",
-    content: "Dino dino dino dino dino"
-  })
-});
+app.get("/", home);
+
+app.get("/about", about);
+app.get("/contact", contact);
+app.get("/privacy", privacy);
 
 // start the server, listen on port defined in .env file
 app.listen(process.env.PORT, () => {
