@@ -17,7 +17,6 @@ app.use(express.static("public"));
 
 // GET route to serve the index.html file
 app.get("/", home);
-
 app.get("/about", about);
 app.get("/contact", contact);
 app.get("/privacy", privacy);
