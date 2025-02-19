@@ -94,4 +94,8 @@ export const navItems = [
     url: "/contact",
     label: "Contact",
   },
+  {
+    url: "/about",
+    label: "about",
+  },
 ];

@@ -1,36 +1,16 @@
-<!DOCTYPE html>
-<html lang="nl">
+<h1>
+    <%= person.firstname %>
+</h1>
+<hr>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <title> Mijn eerste ejs file </title>
-</head>
+<p>
+    <%= person.lastname %>
+</p>
 
-<body>
-    <%- include('../partials/nav'); -%>
+<p>
+    City: <%= person.location.city %>
+</p>
 
-    <h1>
-        <%= person.firstname %>
-    </h1>
-    <hr>
-
-    <p>
-        <%= person.lastname %>
-    </p>
-
-    <p>
-        City: <%= person.location.city %>
-    </p>
-
-    <p>
-        City: <%= person.location.country %>
-    </p>
-
-    <%- include('../partials/footer'); -%>
-</body>
-
-</html>
+<p>
+    City: <%= person.location.country %>
+</p>
