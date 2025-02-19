@@ -1,0 +1,10 @@
+<h1><%= title %></h1>
+
+<ul class="dinos">
+    <% dinosaurs.forEach(dino=> { %>
+        <li>
+            <a href="/dinosaurs/<%= dino.slug %>"><%= dino.name %></a>
+            <img src="assets/images/<%= dino.image %>" alt="">
+        </li>
+        <% }); %>
+</ul>

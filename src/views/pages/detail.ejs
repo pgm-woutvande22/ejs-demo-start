@@ -1,0 +1,9 @@
+
+    <% const dino = dinosaurs.find(dino => dino.slug === token)%>
+
+    <h1><%= dino.name %></h1> <br>
+
+    <div class="">
+        <p><%= dino.description %></p>
+        <img src="../assets/images/<%= dino.image %>" alt="">
+    </div>
